@@ -112,8 +112,76 @@ The API will be accessible at http://localhost:8000/.
 
 
 ## Testing
-
+Description:For testing all the given code 
 python manage.py test
 
+
+## API Endpoints
+
+### Vendors Endpoints:
+
+1. **List Vendors**:
+   - URL: `/vendors/`
+   - Method: GET
+   - Description: Retrieves a list of all vendors.
+
+2. **Create Vendor**:
+   - URL: `/vendors/`
+   - Method: POST
+   - Description: Creates a new vendor.
+
+3. **Retrieve Vendor**:
+   - URL: `/vendors/<vendor_id>/`
+   - Method: GET
+   - Description: Retrieves details of a specific vendor.
+
+4. **Update Vendor**:
+   - URL: `/vendors/<vendor_id>/`
+   - Method: PUT
+   - Description: Updates details of a specific vendor.
+
+5. **Delete Vendor**:
+   - URL: `/vendors/<vendor_id>/`
+   - Method: DELETE
+   - Description: Deletes a specific vendor.
+
+### Purchase Orders Endpoints:
+
+1. **List Purchase Orders**:
+   - URL: `/purchase-orders/`
+   - Method: GET
+   - Description: Retrieves a list of all purchase orders.
+
+2. **Create Purchase Order**:
+   - URL: `/purchase-orders/`
+   - Method: POST
+   - Description: Creates a new purchase order.
+
+3. **Retrieve Purchase Order**:
+   - URL: `/purchase-orders/<order_id>/`
+   - Method: GET
+   - Description: Retrieves details of a specific purchase order.
+
+4. **Update Purchase Order**:
+   - URL: `/purchase-orders/<order_id>/`
+   - Method: PUT
+   - Description: Updates details of a specific purchase order.
+
+5. **Delete Purchase Order**:
+   - URL: `/purchase-orders/<order_id>/`
+   - Method: DELETE
+   - Description: Deletes a specific purchase order.
+
+## Example Usage
+
+- **List Vendors**: `GET /vendors/`
+- **Create Vendor**: `POST /vendors/` with JSON data for a new vendor.
+- **Retrieve Vendor**: `GET /vendors/<vendor_id>/`
+- **Update Vendor**: `PUT /vendors/<vendor_id>/` with JSON data for updated vendor details.
+- **Delete Vendor**: `DELETE /vendors/<vendor_id>/`
+
+Repeat similar steps for purchase orders endpoints, replacing `<order_id>` with the ID of the purchase order.
+
+Ensure that you include all required fields in your requests and handle responses appropriately based on HTTP status codes and response data.
 
 
